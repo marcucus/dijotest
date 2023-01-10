@@ -1,20 +1,8 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
-  ArrowPathIcon,
-  Bars3Icon,
-  BookmarkSquareIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CursorArrowRaysIcon,
-  LifebuoyIcon,
-  PhoneIcon,
-  PlayIcon,
-  ShieldCheckIcon,
-  Squares2X2Icon,
-  XMarkIcon,
+  Bars3Icon
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const nav = [
     {id:1, name:'Accueil', href:'#'},
@@ -23,10 +11,6 @@ const nav = [
     {id:4, name:'Localisation', href:'#'},
     {id:5, name:'Avis', href:'#'},
 ]
-
-function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(' ')
-}
 
 export const Header: React.FC<{}> = () => {
     return (
