@@ -37,7 +37,7 @@ return (
                 <div className="w-full border-t border-gray-300"></div>
             </div>
             <div className="relative flex justify-center">
-                <a id='informations'></a>
+                <a id='informations' href=" "> </a>
                 <span className="bg-white px-3 text-lg font-medium text-stone-900">Plus d'informations</span>
             </div>
         </div>
@@ -99,7 +99,7 @@ return (
                 <div className="w-full border-t border-gray-300"></div>
             </div>
             <div className="relative flex justify-center">
-                <a id="localisation"></a>
+                <a id="localisation" href=" "> </a>
                 <span className="bg-white px-3 text-lg font-medium text-stone-900">Coordonnées</span>
             </div>
         </div>
@@ -145,7 +145,7 @@ return (
                     <div className="w-full border-t border-gray-300"></div>
                 </div>
                 <div className="relative flex justify-center">
-                    <a id="avis"></a>
+                    <a id="avis" href=" "> </a>
                     <span className="bg-white px-3 text-lg font-medium text-stone-900">Avis</span>
                 </div>
             </div><br/><br/>

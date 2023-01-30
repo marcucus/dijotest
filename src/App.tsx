@@ -1,5 +1,4 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import  React from "react";
 import './App.css';
 import { HomePage } from './routes/home';
 import { AffichagePage } from './routes/affichages';

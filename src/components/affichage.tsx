@@ -113,6 +113,7 @@ return (
           src={image.src}
           style={{ objectFit: 'cover', height: '300px' }}
           className="object-cover object-center h-2/6 w-full cursor-pointer"
+          alt=''
           onClick={() => open(image.src)}
         />
       ))}
@@ -122,7 +123,7 @@ return (
             className="w-full max-w-lg bg-white rounded-lg shadow-lg overflow-hidden animation-fadeIn"
             ref={modalRef}
           >
-            <img src={imageOpen} className="h-64 w-full object-cover" />
+            <img src={imageOpen} alt='' className="h-64 w-full object-cover" />
             <button
               className="absolute top-0 right-0 p-3 cursor-pointer"
               onClick={() => close()}
