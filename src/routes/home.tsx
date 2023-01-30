@@ -3,7 +3,7 @@ import { Home } from "../components/home";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 
-export const HomePage: React.FC<any> = () => {
+export const HomePage: React.FC<{}> = () => {
   return (
     <>
     <Header></Header>
