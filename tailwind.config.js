@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'apple':'#000000cc',
         'appleground':'#fff',
+        'back':'#e6e6e6',
       },
     },
   },

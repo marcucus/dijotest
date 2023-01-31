@@ -6,7 +6,8 @@ const nav = [
     {id:2, name:'Activités', href:'/activite'},
     {id:3, name:'Informations', href:'/#informations'},
     {id:4, name:'Localisation', href:'/#localisation'},
-    {id:5, name:'Avis', href:'/#avis'},
+    {id:5, name:'Contact', href:'/#contact'},
+    {id:6, name:'Avis', href:'/#avis'},
 ];
 
 export const Header: React.FC<{}> = () => {

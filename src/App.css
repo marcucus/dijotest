@@ -1,4 +1,6 @@
-
+body{
+  background-color: #e6e6e6;
+}
 .map-responsive {
   overflow:hidden;
   padding-bottom:56.25%;
