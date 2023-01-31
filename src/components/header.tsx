@@ -14,7 +14,7 @@ export const Header: React.FC<{}> = () => {
     return (
         <>
 
-    <Disclosure as="nav" className="bg-apple">
+    <Disclosure as="nav" className="bg-apple z-50 fixed w-full">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

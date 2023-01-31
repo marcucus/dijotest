@@ -9,12 +9,10 @@ return (
 
     <>
         <Pres></Pres>
-        <br/><br/><br/><br/>
-        <Info></Info>
-        <br/><br/><br/><br/>
-        <Map></Map>
-        <br/>
-        <Contact></Contact>
+        <br/><br/>
+        <Info></Info><br/><br/>
+            <Map></Map>
+            <Contact></Contact><br/>
         <br/><br/>
         <Avis></Avis>
         <br/><br/><br/><br/><br/><br/>

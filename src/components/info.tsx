@@ -17,7 +17,7 @@ export const Info: React.FC<{}> = () => {
 
 return (
 
-    <div className="relative mx-auto max-w-7xl lg:pb-72">
+    <div className="relative mx-auto max-w-7xl lg:pb-64">
         <div className="relative">
             <div className="absolute inset-0 flex items-center" aria-hidden="true">
                 <div className="w-full border-t border-gray-300"></div>
@@ -27,7 +27,7 @@ return (
                 <span className="bg-back px-3 text-lg font-medium text-stone-900">Plus d'informations</span>
             </div>
         </div><br/>
-        <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-32 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
             {info.map(infos => (
                 <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
                 <div className="flex flex-1 flex-col justify-between bg-white p-6">

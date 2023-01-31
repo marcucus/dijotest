@@ -2,7 +2,7 @@ import { DevicePhoneMobileIcon, MapPinIcon, EnvelopeIcon, GlobeEuropeAfricaIcon 
 
 export const Contact:React.FC<{}> = () => {
     return (
-        <div className="relative mx-auto max-w-7xl pt-16 lg:pb-40">
+        <div className="relative mx-auto max-w-7xl pt-16 lg:pb-32">
             <div className="relative">
                 <div className="absolute inset-0 flex items-center" aria-hidden="true">
                     <div className="w-full border-t border-gray-300"></div>
