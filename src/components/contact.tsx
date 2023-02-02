@@ -3,7 +3,7 @@ import { Map } from "./map"
 
 export const Contact:React.FC<{}> = () => {
     return (
-        <div className="relative mx-auto max-w-7xl pt-16 lg:pb-32">
+        <div className="relative mx-auto max-w-7xl lg:pt-16 lg:pb-32">
             <a id="contact" href=" "> </a>
             
             <br/><br/>
