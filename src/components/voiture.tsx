@@ -1,38 +1,27 @@
 import React from 'react';
 import { Slider, Slide, ButtonBack, ButtonNext, CarouselProvider } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import a from '../assets/images/affichage/IMG-20230130-WA0098.jpg';
-import b from '../assets/images/affichage/IMG-20230130-WA0101.jpg';
-import c from '../assets/images/affichage/1.jpg';
-import d from '../assets/images/affichage/2.jpg';
-import e from '../assets/images/affichage/3.jpg';
-import f from '../assets/images/affichage/4.jpg';
-import g from '../assets/images/affichage/5.jpg';
-import h from '../assets/images/affichage/6.jpg';
-import i from '../assets/images/affichage/7.jpg';
-import j from '../assets/images/affichage/8.jpg';
-import k from '../assets/images/affichage/9.jpg';
-import l from '../assets/images/affichage/10.jpg';
-import m from '../assets/images/affichage/11.jpg';
-import n from '../assets/images/affichage/12.jpg';
-import o from '../assets/images/affichage/13.jpg';
-import p from '../assets/images/affichage/14.jpg';
-import q from '../assets/images/affichage/15.jpg';
-import r from '../assets/images/affichage/16.jpg';
-import s from '../assets/images/affichage/17.jpg';
-import t from '../assets/images/affichage/18.jpg';
-import u from '../assets/images/affichage/19.jpg';
-import v from '../assets/images/affichage/20.jpg';
-import w from '../assets/images/affichage/21.jpg';
-import x from '../assets/images/affichage/22.jpg';
-import y from '../assets/images/affichage/23.jpg';
+import c from '../assets/images/voitures/lettrage/1.jpg';
+import d from '../assets/images/voitures/lettrage/2.jpg';
+import e from '../assets/images/voitures/lettrage/3.jpg';
+import f from '../assets/images/voitures/lettrage/4.jpg';
+import g from '../assets/images/voitures/lettrage/5.jpg';
+import h from '../assets/images/voitures/lettrage/6.jpg';
+import i from '../assets/images/voitures/lettrage/7.jpg';
+import j from '../assets/images/voitures/lettrage/8.jpg';
+import k from '../assets/images/voitures/lettrage/9.jpg';
+import l from '../assets/images/voitures/lettrage/10.jpg';
+import m from '../assets/images/voitures/lettrage/11.jpg';
+import n from '../assets/images/voitures/lettrage/12.jpg';
+import o from '../assets/images/voitures/lettrage/13.jpg';
+import p from '../assets/images/voitures/lettrage/14.jpg';
+import q from '../assets/images/voitures/lettrage/15.jpg';
+import r from '../assets/images/voitures/lettrage/16.jpg';
 
 
 export const Vehicules: React.FC<{}> = () => {
 
 const images = [
-  { id: 1,  src: a , alt:''},  
-  { id: 2,  src: b , alt:''},
   { id: 3,  src: c , alt:''},
   { id: 4,  src: d , alt:''},
   { id: 5,  src: e , alt:''},
@@ -49,15 +38,7 @@ const images = [
   { id: 16, src: p , alt:''},
   { id: 17, src: q , alt:''},
   { id: 19, src: r , alt:''},
-  { id: 20, src: s , alt:''},
-  { id: 21, src: t , alt:''},
-  { id: 22, src: u , alt:''},
-  { id: 23, src: v , alt:''},
-  { id: 24, src: w , alt:''},
-  { id: 25, src: x , alt:''},
-  { id: 26, src: y , alt:''},
 ];
-
 
 return (
 <>

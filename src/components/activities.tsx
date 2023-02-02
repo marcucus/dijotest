@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Affichage } from './affichage';
+import { Covering } from './cov';
 import { Menuiserie } from './menuiserie';
 import { Vehicules } from './voiture';
 
@@ -24,9 +25,9 @@ export const Activities: React.FC<{}> = () => {
     },
     {
       id:'3', 
-      name:'Véhicule', 
+      name:'Véhicules', 
       href:'/activite/voiture', 
-      description:'Le covering protège la peinture des intempéries et des UV. Cela permet de donner un coup de neuf à son véhicule. Le film adhésif s\'enlève facilement.',
+      description:'Nous créons, imprimons et posons vos marquages sur tout vos véhicules',
     },
 ]
 
@@ -50,7 +51,7 @@ return (
 </div>
 
 <div className=" bg-white rounded-lg mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="max-w-3xl"><br/>
+    <div><br/>
      {category==='0' ? 
         <h2 className="text-xl font-bold tracking-tight text-red-800 sm:text-4xl md:text-5xl lg:text-xl xl:text-2xl">
           Pas de catégorie sélectionée !
@@ -76,7 +77,7 @@ return (
       category==='3' ? 
         <>
           <h2 className="text-xl font-bold tracking-tight text-red-800 sm:text-4xl md:text-5xl lg:text-xl xl:text-2xl">
-            Véhicule
+            Flocage Véhicule
           </h2><br/>
           <div className='text-stone-900 text-xl'>
             {act[2].description}
@@ -92,16 +93,18 @@ return (
       category==='2' ? 
         <Menuiserie></Menuiserie> : 
       category==='3' ? 
-        <Vehicules></Vehicules> : ''
+        <><Vehicules></Vehicules>
+        <h2 className="text-xl font-bold tracking-tight text-red-800 sm:text-4xl md:text-5xl lg:text-xl xl:text-2xl">
+          Covering Véhicule
+        </h2><br/>
+        <div className='text-stone-900 text-xl'>
+        Le covering protège la peinture des intempéries et des UV. Cela permet de donner un coup de neuf à son véhicule. Le film adhésif s'enlève facilement.
+        </div>
+        <Covering></Covering></> : ''
       }
     </div>
 </div>
-
-<div className="mx-auto mt-12 grid max-w-md gap-8 px-6 sm:max-w-lg lg:max-w-7xl lg:grid-cols-3 lg:px-8">
-
-</div>
-
-
+<br></br>
 </>
   )
 }

@@ -17,23 +17,22 @@ export const Info: React.FC<{}> = () => {
 
 return (
 
-    <div className="relative mx-auto max-w-7xl lg:pt-10 lg:pb-56">
+    <div className="relative mx-auto max-w-7xl lg:pb-32">
         <a id='informations' href=" "> </a>
-        <div className="mx-auto mt-32 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-            {info.map(infos => (
-                <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-                <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                    <div className="flex-1">
+        <div className="mx-auto mt-32 grid max-w-lg lg:max-w-none">
+                <div className="overflow-hidden rounded-lg shadow-lg">
+                <div className="justify-between bg-white p-6">
+                    <div>
                         <p className="text-sm font-medium text-red-700">
-                            {infos.title}
+                            Plus d'information
                         </p>
                             <p className="text-xl font-semibold text-stone-900">
-                            {infos.description}
+                            Nous réalisons pour vos enseignes, affichages publicitaires, impression sur bâches ou tout autre type de support de la création graphique jusqu'à la pose sur site.<br/>
+                            Le lettrage sur véhicule ou vitrine est parfait pour votre visibilité, rapide a mettre en oeuvre, vous serez directement remarqués par vos clients et futurs clients.
                             </p>
                     </div>
                 </div>
-            </div>
-            ))} 
+            </div> 
         </div>
             <br/><br/>
         <div className="bg-apple rounded-lg">
