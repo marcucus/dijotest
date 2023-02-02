@@ -50,7 +50,7 @@ return (
     </div>
 </div>
 
-<div className=" bg-white rounded-lg mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div className=" bg-white rounded-lg mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:pb-1">
     <div><br/>
      {category==='0' ? 
         <h2 className="text-xl font-bold tracking-tight text-red-800 sm:text-4xl md:text-5xl lg:text-xl xl:text-2xl">
@@ -104,7 +104,7 @@ return (
       }
     </div>
 </div>
-<br></br>
+<br></br><br/><br/>
 </>
   )
 }

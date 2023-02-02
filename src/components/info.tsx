@@ -1,24 +1,9 @@
 
 export const Info: React.FC<{}> = () => {
-    const info = [
-        {
-            title:'Information',
-            description:'Notre société réalise la création, la confection et la pose de lettrages, enseignes et slogans publicitaires. Nous nous occupons de votre visibilité.'
-        },
-        {
-            title:'Information',
-            description:'Spécialisée dans le grand format et le placement à plusieurs mètres de hauteur, notre personnel dévoué et qualifié réalisé avec le patron les poses les plus délicates, ou difficiles d\'accès.'
-        },
-        {
-            title:'Information',
-            description:'Pour vos cadeaux d\'entreprise ou vos "coups de pub", une gamme d\'objet divers avec votre logo ou slogan vous est proposée.'
-        },
-    ];
 
 return (
 
     <div className="relative mx-auto max-w-7xl lg:pb-32">
-        <a id='informations' href=" "> </a>
         <div className="mx-auto mt-32 grid max-w-lg lg:max-w-none">
                 <div className="overflow-hidden rounded-lg shadow-lg">
                 <div className="justify-between bg-white p-6">

@@ -1,11 +1,15 @@
 import { DevicePhoneMobileIcon, MapPinIcon, EnvelopeIcon, GlobeEuropeAfricaIcon } from "@heroicons/react/24/outline"
+import { Map } from "./map"
 
 export const Contact:React.FC<{}> = () => {
     return (
         <div className="relative mx-auto max-w-7xl pt-16 lg:pb-32">
-            <a id="contact" href=" "> </a><br/><br/>
+            <a id="contact" href=" "> </a>
+            
+            <br/><br/>
                 <section className="overflow-hidden rounded-lg shadow-lg">
-                    <div className="bg-white py-24 sm:py-32">
+                    <div className="bg-white pb-24 sm:pb-32">
+                    <Map></Map>
                         <div className="mx-auto max-w-7xl px-6 lg:px-8">
                             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                             <h2 className="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
