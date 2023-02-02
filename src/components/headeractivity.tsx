@@ -27,7 +27,7 @@ export const Header: React.FC<{}> = () => {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="text-zinc-300 hover:bg-zinc-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                          className="text-zinc-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                         >
                             {item.name}
                         </a>
@@ -37,7 +37,7 @@ export const Header: React.FC<{}> = () => {
               </div>
               <div className="-mr-2 flex lg:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-zinc-300 hover:bg-zinc-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-zinc-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
