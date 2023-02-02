@@ -3,11 +3,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const nav = [
     {id:1, name:'Accueil', href:'/'},
-    {id:2, name:'Réalisations', href:'../activite'},
-    {id:3, name:'Informations', href:'../#informations'},
-    {id:4, name:'Localisation', href:'../#localisation'},
-    {id:5, name:'Contact', href:'../#contact'},
-    {id:6, name:'Avis', href:'../#avis'},
+    {id:2, name:'Réalisations', href:'../activite'}
 ]
 
 export const Header: React.FC<{}> = () => {

@@ -17,8 +17,8 @@ export const Info: React.FC<{}> = () => {
 
 return (
 
-    <div className="relative mx-auto max-w-7xl lg:pb-64">
-        <a id='informations' href=" "> </a><br/>
+    <div className="relative mx-auto max-w-7xl lg:pt-10 lg:pb-56">
+        <a id='informations' href=" "> </a>
         <div className="mx-auto mt-32 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
             {info.map(infos => (
                 <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">

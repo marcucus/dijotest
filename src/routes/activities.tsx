@@ -6,8 +6,8 @@ import { Header } from "../components/headeractivity";
 export const ActivityPage: React.FC<{}> = () => {
   return (
     <>
-     <Header></Header>
-       <Activities></Activities><br/><br/>
+    <Header></Header>
+      <br/><Activities></Activities>
     <Footer></Footer>
     </>
   );

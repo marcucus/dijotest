@@ -4,7 +4,7 @@ import { Menuiserie } from './menuiserie';
 import { Vehicules } from './voiture';
 
 export const Activities: React.FC<{}> = () => {
-  const [category, setCategory] = useState('0');
+  const [category, setCategory] = useState('1');
 
   function handleClick(e:any) {
     setCategory(e);
@@ -13,7 +13,7 @@ export const Activities: React.FC<{}> = () => {
   const act = [
     {
       id:'1', 
-      name:'Affichages', 
+      name:'Affichage', 
       description:'L\'affichage publicitaire est un excellent moyen pour les entreprises de tous secteurs de diffuser un message marketing à leur clientèle.',
     },
     {
@@ -24,7 +24,7 @@ export const Activities: React.FC<{}> = () => {
     },
     {
       id:'3', 
-      name:'Véhicules', 
+      name:'Véhicule', 
       href:'/activite/voiture', 
       description:'Le covering protège la peinture des intempéries et des UV. Cela permet de donner un coup de neuf à son véhicule. Le film adhésif s\'enlève facilement.',
     },
@@ -35,7 +35,6 @@ return (
 <div className="relative py-16">
   <div className="absolute inset-x-0 top-0 hidden h-1/2 lg:block" aria-hidden="true" />
     <div className="mx-auto max-w-7xl bg-white lg:bg-transparent lg:px-8">
-      <h1>Cliquez sur les catégories pour voir les photos correspondantes ! </h1>
       <nav className="isolate flex divide-x divide-gray-200 rounded-lg shadow lg:w-5/6 mx-auto" aria-label="Tabs">
         {act.map(actt => ( 
           <button onClick={() => handleClick(actt.id)} aria-current="page" className={
@@ -51,13 +50,50 @@ return (
 </div>
 
 <div className=" bg-white rounded-lg mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="max-w-3xl">
-     <h1 className=''>
-      
-     </h1>
-    </div>
+    <div className="max-w-3xl"><br/>
+     {category==='0' ? 
+        <h2 className="text-xl font-bold tracking-tight text-red-800 sm:text-4xl md:text-5xl lg:text-xl xl:text-2xl">
+          Pas de catégorie sélectionée !
+        </h2> : 
+      category==='1' ? 
+        <>
+          <h2 className="text-xl font-bold tracking-tight text-red-800 sm:text-4xl md:text-5xl lg:text-xl xl:text-2xl">
+              Affichage
+          </h2><br/>
+          <div className='text-stone-900 text-xl h-auto w-auto'>
+            {act[0].description}
+          </div>
+        </> : 
+      category==='2' ? 
+        <>
+          <h2 className="text-xl font-bold tracking-tight text-red-800 sm:text-4xl md:text-5xl lg:text-xl xl:text-2xl">
+            Menuiserie
+          </h2><br/>
+          <div className='text-stone-900 text-xl'>
+            {act[1].description}
+          </div>
+        </> : 
+      category==='3' ? 
+        <>
+          <h2 className="text-xl font-bold tracking-tight text-red-800 sm:text-4xl md:text-5xl lg:text-xl xl:text-2xl">
+            Véhicule
+          </h2><br/>
+          <div className='text-stone-900 text-xl'>
+            {act[2].description}
+          </div>
+        </> : ''
+      }
+    </div><br/>
     <div className=''>
-
+    {category==='0' ? 
+        <div>Choisissez une catégorie en appuyant sur les boutons correspondant</div> : 
+      category==='1' ? 
+        <Affichage></Affichage> : 
+      category==='2' ? 
+        <Menuiserie></Menuiserie> : 
+      category==='3' ? 
+        <Vehicules></Vehicules> : ''
+      }
     </div>
 </div>
 
@@ -65,14 +101,7 @@ return (
 
 </div>
 
-{category==='0' ? 
-      <div>test</div> : 
-      category==='1' ? 
-        <Affichage></Affichage> : 
-      category==='2' ? 
-       <Menuiserie></Menuiserie> : 
-      category==='3' ? 
-        <Vehicules></Vehicules> : ''}
+
 </>
   )
 }

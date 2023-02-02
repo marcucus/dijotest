@@ -6,16 +6,14 @@ import { Pres } from "./pres";
 
 export const Home: React.FC<{}> = () => {
 return (
-
     <>
         <Pres></Pres>
-        <br/>
-        <Info></Info><br/><br/>
+        <Info></Info>
             <Map></Map>
-            <div className="bg-apple"><Contact></Contact></div><div className="bg-white"><br/>
+            <div className="bg-apple"><br/><Contact></Contact><br/><br/></div><div className="bg-white"><br/>
         <br/><br/>
         <Avis></Avis>
         <br/><br/><br/><br/><br/><br/></div>
     </>
-  )
+    )
 }

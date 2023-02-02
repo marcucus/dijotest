@@ -7,14 +7,14 @@ const nav = [
     {id:3, name:'Informations', href:'/#informations'},
     {id:4, name:'Localisation', href:'/#localisation'},
     {id:5, name:'Contact', href:'/#contact'},
-    {id:6, name:'Avis', href:'/#avis'},
+    {id:6, name:'Avis', href:'/#avis'}
 ];
 
 export const Header: React.FC<{}> = () => {
     return (
         <>
 
-    <Disclosure as="nav" className="bg-apple z-50 fixed w-full">
+    <Disclosure as="nav" className="bg-apple z-50 fixed w-full shadow-lg">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

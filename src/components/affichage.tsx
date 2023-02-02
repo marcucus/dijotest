@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import a from '../assets/images/affichage/IMG-20230130-WA0098.jpg';
 import b from '../assets/images/affichage/IMG-20230130-WA0101.jpg';
 import c from '../assets/images/affichage/1.jpg';
@@ -24,124 +24,137 @@ import v from '../assets/images/affichage/20.jpg';
 import w from '../assets/images/affichage/21.jpg';
 import x from '../assets/images/affichage/22.jpg';
 import y from '../assets/images/affichage/23.jpg';
+import { CarouselProvider, ButtonBack, Slider, Slide, ButtonNext } from 'pure-react-carousel';
 
 
 export const Affichage: React.FC<{}> = () => {
 
-  const [isOpen, setIsOpen] = useState(false);
-  const [imageOpen, setImageOpen] = useState('');
-
-  const modalRef = useRef<HTMLDivElement>(null);
-
-  const handleClickOutside = (event: MouseEvent) => {
-    if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-      setIsOpen(false);
-    }
-  };
-
-  React.useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-const images = [
-  { id: 1, src: a },  
-  { id: 2, src: b },
-  { id: 3, src: c },
-  { id: 4, src: d },
-  { id: 5, src: e },
-  { id: 6, src: f },
-  { id: 7, src: g },
-  { id: 8, src: h },
-  { id: 9, src: i },
-  { id: 10, src: j },
-  { id: 11, src: k },
-  { id: 12, src: l },
-  { id: 13, src: m },
-  { id: 14, src: n },
-  { id: 15, src: o },
-  { id: 16, src: p },
-  { id: 17, src: q },
-  { id: 19, src: r },
-  { id: 20, src: s },
-  { id: 21, src: t },
-  { id: 22, src: u },
-  { id: 23, src: v },
-  { id: 24, src: w },
-  { id: 25, src: x },
-  { id: 26, src: y },
-];
-
-function open(src:any){
-  setIsOpen(true);
-  setImageOpen(src);
-}
-
-function close(){
-  setIsOpen(false);
-  setImageOpen('');
-}
+  const images = [
+    { id: 1,  src: a , alt:''},  
+    { id: 2,  src: b , alt:''},
+    { id: 3,  src: c , alt:''},
+    { id: 4,  src: d , alt:''},
+    { id: 5,  src: e , alt:''},
+    { id: 6,  src: f , alt:''},
+    { id: 7,  src: g , alt:''},
+    { id: 8,  src: h , alt:''},
+    { id: 9,  src: i , alt:''},
+    { id: 10, src: j , alt:''},
+    { id: 11, src: k , alt:''},
+    { id: 12, src: l , alt:''},
+    { id: 13, src: m , alt:''},
+    { id: 14, src: n , alt:''},
+    { id: 15, src: o , alt:''},
+    { id: 16, src: p , alt:''},
+    { id: 17, src: q , alt:''},
+    { id: 19, src: r , alt:''},
+    { id: 20, src: s , alt:''},
+    { id: 21, src: t , alt:''},
+    { id: 22, src: u , alt:''},
+    { id: 23, src: v , alt:''},
+    { id: 24, src: w , alt:''},
+    { id: 25, src: x , alt:''},
+    { id: 26, src: y , alt:''},
+  ];
 
 return (
 <>
-{/*<div className="flex flex-wrap">
-      {photos.map(photo => (
-        <div key={photo.id} className="w-1/5 p-2">
-          <img src={photo.src} alt="" className="w-full h-64 object-cover"/>
-        </div>
-      ))}
-    </div>
-
-    <div className="bg-white mx-auto max-w-7xl pt-20 sm:px-6 lg:px-8">
-
-    <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-    {photos.map(photo => (
-                <li className="relative">
-                    <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                        <img src={photo.src} alt="" className="pointer-events-none group-hover:opacity-75"/>
-                    </div>
-                </li>
-                ))}
-    </ul>
-    </div>*/}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image.src}
-          style={{ objectFit: 'cover', height: '300px' }}
-          className="object-cover object-center h-2/6 w-full cursor-pointer"
-          alt=''
-          onClick={() => open(image.src)}
-        />
-      ))}
-      {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center">
-          <div
-            className="w-full max-w-lg bg-white rounded-lg shadow-lg overflow-hidden animation-fadeIn"
-            ref={modalRef}
-          >
-            <img src={imageOpen} alt='' className="h-64 w-full object-cover" />
-            <button
-              className="absolute top-0 right-0 p-3 cursor-pointer"
-              onClick={() => close()}
-            >
-              <svg
-                className="fill-current text-gray-600"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                width="24"
-                height="24"
-              >
-                <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-              </svg>
-            </button>
+<div className="container mx-auto">
+  <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+      {/* Carousel for desktop and large size devices */}
+      <CarouselProvider className="lg:block hidden" naturalSlideHeight={100} naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={26} visibleSlides={3} step={1} infinite={true}>
+          <div className="w-full relative flex items-center justify-center">
+              <ButtonBack role="button" aria-label="slide backward" className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
+                  <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 1L1 7L7 13" stroke="white" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+              </ButtonBack>
+              <div className="h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                  <Slider>
+                      <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                          {images.map(image => (
+                            <Slide index={image.id} className="w-auto">
+                              <div className="flex flex-shrink-0 relative sm:w-auto">
+                                  <img src={image.src} alt="black chair and white table" className='object-cover object-center h-2/6 w-full' style={{ objectFit: 'cover', height: '400px'}} />
+                                  <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                  </div>
+                              </div>
+                          </Slide>
+                          ))}
+                      </div>
+                  </Slider>
+              </div>
+              <ButtonNext role="button" aria-label="slide forward" className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
+                  <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L7 7L1 13" stroke="white" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+              </ButtonNext>
           </div>
-        </div>
-      )}
-    </div>
+      </CarouselProvider>
+
+      {/* Carousel for tablet and medium size devices */}
+      <CarouselProvider className="lg:hidden md:block hidden" naturalSlideHeight={100} naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={26} visibleSlides={2} step={1} infinite={true}>
+          <div className="w-full relative flex items-center justify-center">
+              <ButtonBack role="button" aria-label="slide backward" className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
+                  <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 1L1 7L7 13" stroke="white" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+              </ButtonBack>
+              <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                  <Slider>
+                      <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                      {images.map(image => (
+                          <Slide index={image.id}>
+                              <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                                  <img src={image.src} alt="black chair and white table" className="object-cover object-center w-full" />
+                                  <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                  </div>
+                              </div>
+                          </Slide>
+                      ))}
+                      </div>
+                  </Slider>
+              </div>
+              <ButtonNext role="button" aria-label="slide forward" className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
+                  <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L7 7L1 13" stroke="white" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+              </ButtonNext>
+          </div>
+      </CarouselProvider>
+
+      {/* Carousel for mobile and Small size Devices */}
+      <CarouselProvider className="block md:hidden " naturalSlideHeight={100} naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={26} visibleSlides={1} step={1} infinite={true}>
+          <div className="w-full relative flex items-center justify-center">
+              <ButtonBack role="button" aria-label="slide backward" className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
+                  <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 1L1 7L7 13" stroke="white" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+              </ButtonBack>
+              <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                  <Slider>
+                      <div id="slider" className="h-full w-full flex lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700">
+                        {images.map(image => (
+                          <Slide index={image.id}>
+                              <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                                  <img src={image.src} alt="black chair and white table" className="object-cover object-center w-full" />
+                                  <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                  </div>
+                              </div>
+                          </Slide>
+                        ))}
+                      </div>
+                  </Slider>
+              </div>
+              <ButtonNext role="button" aria-label="slide forward" className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
+                  <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L7 7L1 13" stroke="white" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+              </ButtonNext>
+          </div>
+      </CarouselProvider>
+  </div>
+</div>
 </>
   )
 }
