@@ -9,13 +9,13 @@ return (
 
     <>
         <Pres></Pres>
-        <br/><br/>
+        <br/>
         <Info></Info><br/><br/>
             <Map></Map>
-            <Contact></Contact><br/>
+            <div className="bg-apple"><Contact></Contact></div><div className="bg-white"><br/>
         <br/><br/>
         <Avis></Avis>
-        <br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/></div>
     </>
   )
 }

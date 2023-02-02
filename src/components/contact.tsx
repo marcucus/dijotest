@@ -3,15 +3,7 @@ import { DevicePhoneMobileIcon, MapPinIcon, EnvelopeIcon, GlobeEuropeAfricaIcon 
 export const Contact:React.FC<{}> = () => {
     return (
         <div className="relative mx-auto max-w-7xl pt-16 lg:pb-32">
-            <div className="relative">
-                <div className="absolute inset-0 flex items-center" aria-hidden="true">
-                    <div className="w-full border-t border-gray-300"></div>
-                </div>
-                <div className="relative flex justify-center">
-                    <a id="contact" href=" "> </a>
-                    <span className="bg-back px-3 text-lg font-medium text-stone-900">Contact</span>
-                </div>
-            </div><br/><br/><br/>
+            <a id="contact" href=" "> </a><br/><br/>
                 <section className="overflow-hidden rounded-lg shadow-lg">
                     <div className="bg-white py-24 sm:py-32">
                         <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const nav = [
     {id:1, name:'Accueil', href:'/'},
-    {id:2, name:'Activités', href:'/activite'},
+    {id:2, name:'Réalisations', href:'/activite'},
     {id:3, name:'Informations', href:'/#informations'},
     {id:4, name:'Localisation', href:'/#localisation'},
     {id:5, name:'Contact', href:'/#contact'},
@@ -25,7 +25,8 @@ export const Header: React.FC<{}> = () => {
                     <div className="text-zinc-300 text-base font-bold" style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>DIJOMA</div>
                   </a>
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                    
+                <div className="hidden lg:ml-6 lg:block">
                   <div className="space-x-9 items-center">
                       {nav.map((item) => (
                         <a
@@ -39,7 +40,7 @@ export const Header: React.FC<{}> = () => {
                   </div>
                 </div>
               </div>
-              <div className="-mr-2 flex sm:hidden">
+              <div className="-mr-2 flex lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-zinc-300 hover:bg-zinc-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -53,7 +54,7 @@ export const Header: React.FC<{}> = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden mr-10">
+          <Disclosure.Panel className="lg:hidden mr-10">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {nav.map((item) => (
                 <Disclosure.Button

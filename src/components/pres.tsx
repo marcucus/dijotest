@@ -21,14 +21,14 @@ return (
                         </div>
                     </div>
 
-                    <div className="relative bg-white lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-8 lg:items-center lg:rounded-3xl">
+                    <div className="relative bg-white lg:bg-apple lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-8 lg:items-center lg:rounded-3xl">
                         <div className="relative mx-auto max-w-md space-y-6 py-12 px-6 sm:max-w-3xl sm:py-16 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0">
-                            <h2 className="text-4xl font-bold tracking-tight text-stone-900 sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl">
+                            <h2 className="text-4xl font-bold tracking-tight text-stone-900 lg:text-white sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl sm:text-center">
                                 <span className="block xl:inline">Bienvenue chez </span>
                                 <span className="block text-red-700 xl:inline">DIJOMA</span>
                             </h2>
-                            <p className="mx-auto mt-3 max-w-md text-lg text-stone-500 sm:text-xl md:mt-5 md:max-w-3xl">
-                                Société familiale de publicité et de menuiserie créée en 1996.
+                            <p className="mx-auto mt-3 max-w-md text-lg text-stone-500 lg:text-stone-300 sm:text-xl md:mt-5 md:max-w-3xl">
+                                Société familiale de publicité et de menuiserie créée en 2002.
                                 Agréée Région Wallonne et affiliée CSTC.
                             </p>
                             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
