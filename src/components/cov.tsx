@@ -25,25 +25,25 @@ import u from '../assets/images/voitures/covering/19.jpg';
 export const Covering: React.FC<{}> = () => {
 
 const cov = [
-    { id: 3,  src: c , alt:''},
-    { id: 4,  src: d , alt:''},
-    { id: 5,  src: e , alt:''},
-    { id: 6,  src: f , alt:''},
-    { id: 7,  src: g , alt:''},
-    { id: 8,  src: h , alt:''},
-    { id: 9,  src: i , alt:''},
-    { id: 10, src: j , alt:''},
-    { id: 11, src: k , alt:''},
-    { id: 12, src: l , alt:''},
-    { id: 13, src: m , alt:''},
-    { id: 14, src: n , alt:''},
-    { id: 15, src: o , alt:''},
-    { id: 16, src: p , alt:''},
-    { id: 17, src: q , alt:''},
-    { id: 18, src: r , alt:''},
-    { id: 19, src: s , alt:''},
-    { id: 20, src: t , alt:''},
-    { id: 21, src: u , alt:''},
+    { id: 1,  src: c , alt:''},
+    { id: 2,  src: d , alt:''},
+    { id: 3,  src: e , alt:''},
+    { id: 4,  src: f , alt:''},
+    { id: 5,  src: g , alt:''},
+    { id: 6,  src: h , alt:''},
+    { id: 7,  src: i , alt:''},
+    { id: 8,  src: j , alt:''},
+    { id: 9,  src: k , alt:''},
+    { id: 10, src: l , alt:''},
+    { id: 11, src: m , alt:''},
+    { id: 12, src: n , alt:''},
+    { id: 13, src: o , alt:''},
+    { id: 14, src: p , alt:''},
+    { id: 15, src: q , alt:''},
+    { id: 16, src: r , alt:''},
+    { id: 17, src: s , alt:''},
+    { id: 18, src: t , alt:''},
+    { id: 19, src: u , alt:''},
   ];
 
 
@@ -51,7 +51,7 @@ return (
 <div className="container mx-auto">
     <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
         {/* Carousel for desktop and large size devices */}
-        <CarouselProvider className="lg:block hidden cursor-grab" naturalSlideHeight={100} naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={26} visibleSlides={3} step={1} infinite={true}>
+        <CarouselProvider className="lg:block hidden cursor-grab" naturalSlideHeight={100} naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={19} visibleSlides={3} step={1} infinite={true}>
             <div className="w-full relative flex items-center justify-center">
                 <ButtonBack role="button" aria-label="slide backward" className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
                     <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@ return (
         </CarouselProvider>
 
         {/* Carousel for tablet and medium size devices */}
-        <CarouselProvider className="lg:hidden md:block hidden cursor-grab" naturalSlideHeight={100} naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={26} visibleSlides={2} step={1} infinite={true}>
+        <CarouselProvider className="lg:hidden md:block hidden cursor-grab" naturalSlideHeight={100} naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={19} visibleSlides={2} step={1} infinite={true}>
             <div className="w-full relative flex items-center justify-center">
                 <ButtonBack role="button" aria-label="slide backward" className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
                     <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +113,7 @@ return (
         </CarouselProvider>
 
         {/* Carousel for mobile and Small size Devices */}
-        <CarouselProvider className="block md:hidden cursor-grab" naturalSlideHeight={100} naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={26} visibleSlides={1} step={1} infinite={true}>
+        <CarouselProvider className="block md:hidden cursor-grab" naturalSlideHeight={100} naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={19} visibleSlides={1} step={1} infinite={true}>
             <div className="w-full relative flex items-center justify-center">
                 <ButtonBack role="button" aria-label="slide backward" className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
                     <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">

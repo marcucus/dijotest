@@ -37,7 +37,7 @@ return (
 
                     <div className="relative bg-white lg:bg-apple lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-8 lg:items-center lg:rounded-3xl">
                         <div className="relative mx-auto max-w-md space-y-6 py-12 px-6 sm:max-w-3xl sm:py-16 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0">
-                            <h2 className="text-4xl font-bold tracking-tight text-stone-900 lg:text-white sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl sm:text-center">
+                            <h2 className="text-4xl font-bold tracking-tight text-stone-900 lg:text-white sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl sm:text-center xl:absolute xl:-left-1 xl:-top-10">
                                 <span className="block xl:inline">Bienvenue chez </span>
                                 <span className="block text-red-700 xl:inline">DIJOMA</span>
                             </h2>
@@ -56,6 +56,20 @@ return (
                         </div>
                     </div>
             </div>
+            <div className="mx-auto mt-32 grid max-w-lg lg:max-w-none">
+                <div className="overflow-hidden rounded-lg shadow-lg">
+                <div className="justify-between bg-apple p-6">
+                    <div>
+                        <p className="text-sm font-medium text-red-700">
+                            Dijoma
+                        </p>
+                            <p className="text-xl font-semibold text-white">
+                            Notre société réalise la création, la confection et la pose de lettrages d'enseignes et slogans publicitaires. Nous nous occupons de votre visibilité. Spécialisée dans le grand format et le placement à plusieurs mètres de hauteur, notre personnel dévoué et qualifié réalisé avec le patron les poses les plus délicates, ou difficiles d'accès. Pour vos cadeaux d'entreprise ou vos "coups de pub", une gamme d'objet divers avec votre logo ou slogan vous est proposée.
+                            </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
             <div className="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
             {info.map(infos => (
                 <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
