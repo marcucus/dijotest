@@ -3,11 +3,11 @@ import logo from "../assets/images/image1.jpeg";
 export const Pres: React.FC<{}> = () => {
     const info = [
         {
-            title:'Information',
+            title:'Dijoma',
             description:'Notre société réalise la création, la confection et la pose de lettrages, enseignes et slogans publicitaires. Nous nous occupons de votre visibilité.'
         },
         {
-            title:'Information',
+            title:'Présentation',
             description:'Spécialisée dans le grand format et le placement à plusieurs mètres de hauteur, notre personnel dévoué et qualifié réalisé avec le patron les poses les plus délicates, ou difficiles d\'accès.'
         },
         {
@@ -56,20 +56,6 @@ return (
                         </div>
                     </div>
             </div>
-            <div className="mx-auto mt-32 grid max-w-lg lg:max-w-none">
-                <div className="overflow-hidden rounded-lg shadow-lg">
-                <div className="justify-between bg-apple p-6">
-                    <div>
-                        <p className="text-sm font-medium text-red-700">
-                            Dijoma
-                        </p>
-                            <p className="text-xl font-semibold text-white">
-                            Notre société réalise la création, la confection et la pose de lettrages d'enseignes et slogans publicitaires. Nous nous occupons de votre visibilité. Spécialisée dans le grand format et le placement à plusieurs mètres de hauteur, notre personnel dévoué et qualifié réalisé avec le patron les poses les plus délicates, ou difficiles d'accès. Pour vos cadeaux d'entreprise ou vos "coups de pub", une gamme d'objet divers avec votre logo ou slogan vous est proposée.
-                            </p>
-                    </div>
-                </div>
-            </div> 
-        </div>
             <div className="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
             {info.map(infos => (
                 <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">

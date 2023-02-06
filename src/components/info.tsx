@@ -9,7 +9,7 @@ return (
                 <div className="justify-between bg-white p-6">
                     <div>
                         <p className="text-sm font-medium text-red-700">
-                            Plus d'information
+                            Plus d'informations
                         </p>
                             <p className="text-xl font-semibold text-stone-900">
                             Nous réalisons pour vos enseignes, affichages publicitaires, impression sur bâches ou tout autre type de support de la création graphique jusqu'à la pose sur site.<br/>
