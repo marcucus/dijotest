@@ -18,7 +18,6 @@ function App() {
 <div className="App">
       <header className="App-header">
         <RouterProvider router={router} />
-        <meta name="google-site-verification" content="L2L0o-QJcawLAJ-9HgSv5IQYO1mv_9AR5nPn4ag3EuM" />
       </header>
     </div>
   );
