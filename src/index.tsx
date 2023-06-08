@@ -8,7 +8,6 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <meta name="google-site-verification" content="L2L0o-QJcawLAJ-9HgSv5IQYO1mv_9AR5nPn4ag3EuM" />
   <React.StrictMode>
     <App />
   </React.StrictMode>
